@@ -18,22 +18,24 @@ Other functions are currently undocumented but will be documented in time.
 ### `.req.get`
 
 Takes two args:
-* URL (can be string, hsym or symbol)
-* Dictionary of HTTP headers
+
+ * URL (can be string, hsym or symbol)
+ * Dictionary of HTTP headers
 
 ### `.req.post`
 
 Takes three args:
-* URL (can be string, hsym or symbol)
-* Dictionary of HTTP headers
-* Payload (should be a string) -> where necessary, `Content-Type` should be set in header dict manually. `Content-Length` will be added automatically
+
+ * URL (can be string, hsym or symbol)
+ * Dictionary of HTTP headers
+ * Payload (should be a string) -> where necessary, `Content-Type` should be set in header dict manually. `Content-Length` will be added automatically
 
 ## Examples
 
 ### Custom Headers
 
-```
-$ q req.q                                                                                                                            
+```q
+$ q req.q
 KDB+ 3.5 2017.10.11 Copyright (C) 1993-2017 Kx Systems
 l32/ 2()core 1945MB jonny grizzly 127.0.1.1 NONEXPIRE
 
@@ -47,8 +49,8 @@ headers| "*/*"  "close"    "with custom" "values" "httpbin.org" "kdb+/3.5"
 
 ### HTTP Redirect
 
-```
-$ q req.q                                                                                                                            
+```q
+$ q req.q
 KDB+ 3.5 2017.10.11 Copyright (C) 1993-2017 Kx Systems
 l32/ 2()core 1945MB jonny grizzly 127.0.1.1 NONEXPIRE
 
@@ -63,7 +65,7 @@ url    | "http://httpbin.org/get"
 
 ### POST request
 
-```
+```q
 q).req.post["http://httpbin.org/post";enlist["Content-Type"]!enlist .req.ty`json;.j.j (1#`text)!1#`hello]
 args   | (`symbol$())!()
 data   | "{\"text\":\"hello\"}"
