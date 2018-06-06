@@ -1,5 +1,7 @@
 # HTTP redirects
 
+---
+
 reQ will automatically follow redirects, both absolute & relative. For example,
 
 ## Relative redirect example

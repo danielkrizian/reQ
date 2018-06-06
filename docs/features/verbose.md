@@ -1,5 +1,7 @@
 # Verbose mode
 
+---
+
 reQ includes a verbose mode which displays the raw HTTP requests & responses.
 This can be useful for debugging purposes, to view the full headers on both the
 request & response.

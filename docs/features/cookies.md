@@ -1,5 +1,7 @@
 # HTTP Cookies
 
+---
+
 reQ has built-in support for HTTP cookies; when a response is received with a
 `Set-Cookie` header, the relevant cookie will be stored in `.req.cookiejar`,
 and then used automatically for future requests to the relevant host.
