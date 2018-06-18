@@ -26,7 +26,8 @@ it is advisable to use strings, to avoid bloating internalised sym vector.
 
 ---
 
-#### ```.req.get[url;headers]```
+#### `.req.get`
+`[url;headers]`
 
 * *url*: URL to send request to, as string, hsym or symbol
 * *headers*: KDB dictionary of custom headers to add to HTTP request
@@ -48,7 +49,8 @@ headers| "*/*"  "close"    "with custom" "values" "httpbin.org" "kdb+/3.5"
 
 ---
 
-#### `.req.post[url;headers;body]`
+#### `.req.post`
+`[url;headers;body]`
 
  * *url*: URL to send request to, as string, hsym or symbol
  * *headers*: KDB dictionary of custom headers to add to HTTP request
@@ -72,7 +74,8 @@ url    | "http://httpbin.org/post"
 
 ---
 
-#### `.req.delete[url;headers;body]`
+#### `.req.delete`
+`[url;headers;body]`
 
  * *url*: URL to send request to, as string, hsym or symbol
  * *headers*: KDB dictionary of custom headers to add to HTTP request
@@ -96,7 +99,8 @@ url    | "http://httpbin.org/delete"
 
 ---
 
-#### `.req.g[url]`
+#### `.req.g`
+`[url]`
 
 Projection to send a simple GET request with no custom headers
 
@@ -114,7 +118,8 @@ url    | "http://httpbin.org/get"
 
 ---
 
-#### `.req.del[url;headers]`
+#### `.req.del`
+`[url;headers]`
 
 Projection to send DELETE request with no body
 
@@ -137,7 +142,8 @@ url    | "http://httpbin.org/delete"
 
 ---
 
-#### `.req.d[url]`
+#### `.req.d`
+`[url]`
 
 Projection to send simple DELETE requests with no body or headers
 
