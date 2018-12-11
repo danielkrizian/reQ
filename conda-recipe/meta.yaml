@@ -1,0 +1,16 @@
+package:
+  name: req
+  version: 0.1.2
+
+build:
+  number: 0
+  noarch: true
+
+source:
+  - url: https://github.com/danielkrizian/reQ/archive/v0.1.2.tar.gz
+    folder: src
+
+requirements:
+  run:
+    - qutil
+    - qhttps
